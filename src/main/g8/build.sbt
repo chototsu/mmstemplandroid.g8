@@ -25,7 +25,7 @@ run <<= run in Android
  
 install <<= install in Android
 
-resolvers += Resolver.file("testrepo3",file("/Users/kobayasi/NetBeansProjects/MMD/testrepo/ivy2/")) ( Patterns(false,"[organisation]/[module]/[revision]/[type]s/[artifact].[ext]") )
+resolvers += Resolver.url("testrepo2",url("https://raw.github.com/chototsu/testrepo/master/ivy2/")) ( Patterns(false,"[organisation]/[module]/[revision]/[type]s/[artifact].[ext]") )
 
 libraryDependencies += "info.projectkyoto" % "mikumikustudio-lib" % "0.2-SNAPSHOT" % "compile->android"
 
